@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/ci-modal.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="lg-container">
+            <div>
+                <div class="block">
+                    <h2 class="title">Sign in</h2>
+                    <form action="" class="login-form" form-default="false" id="loginForm">
+
+                        <div class="form-group">
+                            <label for="email" class="label">email</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="label">Password</label>
+                            <input type="password" name="password" id="password" placeholder="password" required>
+                            <a class="float-txt" href="#">Forgot password?</a>
+                        </div>
+
+                        <button class="btn" app-event="login">Login</button>
+
+                    </form>
+
+                </div>
+                <p class="link-p">
+                    Don't have an account yet? <a href="register.html" class="link">Register</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/cl-modal.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

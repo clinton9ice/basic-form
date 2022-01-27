@@ -1,0 +1,167 @@
+@font-face {
+    font-family: poppins;
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+:root {
+    --dark: #2e2e2d;
+    --white: hsl(265, 100%, 100%);
+    --gray: hsl(0, 0%, 50%);
+    --danger: rgb(231, 69, 69);
+    --blue: rgb(40, 11, 170);
+    --success: rgb(19, 202, 19);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex !important;
+}
+
+.align-flex-center {
+    align-items: center;
+}
+
+.align-flex-start {
+    align-items: flex-start;
+}
+
+.justify-flex-between {
+    justify-content: space-between;
+}
+
+.justify-flex-center {
+    justify-content: center;
+}
+
+.justify-flex-around {
+    justify-content: space-around;
+}
+
+.justify-flex-evenly {
+    justify-content: space-evenly;
+}
+
+.border-danger {
+    border-color: var(--danger) !important;
+}
+
+.text-danger {
+    color: var(--danger);
+    font-size: 0.87em;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.btn {
+    background-color: #e5e5e5;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: var(--dark);
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn:focus {
+    outline-style: ridge;
+    outline-color: #e5e5e5;
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--gray) !important;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main>.lg-container {
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lg-container>div>.block {
+    min-height: 120px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #d3d3d3;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    background-color: var(--white);
+}
+
+.lg-container>.block .title {
+    margin-bottom: 2rem;
+    font-size: 2em;
+    color: var(--dark);
+    text-transform: capitalize;
+}
+
+.lg-container>div>.block .form-group {
+    margin: 2rem 0;
+    position: relative;
+    display: block;
+}
+
+.lg-container>div>.block .form-group .label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+
+.lg-container>div>.block .form-group input {
+    height: 35px;
+    width: 100%;
+    padding: 1rem 0.8rem;
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.lg-container>div>.block .form-group .float-txt {
+    clear: left;
+    float: right;
+    margin: 1rem 0;
+}
+
+.lg-container>div>.block .btn {
+    width: 100%;
+    background: var(--dark);
+    color: var(--white);
+}
+
+.lg-container .link-p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+[app-error] {
+    margin-top: 0.5rem;
+}

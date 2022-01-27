@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/ci-modal.css">
+    <link rel="stylesheet" href="assets/css/fm.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+
+<body>
+
+    <div class="container p-3">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="card mx-auto" style="max-width:520px;">
+                    <article class="card-body">
+                        <header class="mb-4">
+                            <h4 class="card-title">Sign up</h4>
+                        </header>
+
+                        <form class="register-form" form-default="false">
+
+                            <div class="form-row">
+
+                                <div class="col form-group">
+                                    <label for="first-name">First name</label>
+                                    <input type="text" name="fname" id="first-name" class="form-control" placeholder=""
+                                        required>
+                                </div>
+                                <!-- form-group end.// -->
+                                <div class="col form-group">
+                                    <label for="last-name">Last name</label>
+                                    <input type="text" name="lname" id="last-name" class="form-control" placeholder=""
+                                        required>
+                                </div>
+                                <!-- form-group end.// -->
+                            </div>
+                            <!-- form-row end.// -->
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder=""
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Create password</label>
+                                <input class="form-control" name="password" id="password" type="password"
+                                    app-type="password" required>
+                            </div>
+                            <!-- form-group end.// -->
+
+                            <div class="form-row">
+
+                                <div class="form-group col-md-6">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" id="city" class="form-control">
+                                </div>
+
+                                <!-- form-group end.// -->
+                                <div class="form-group col-md-6">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country" class="form-control">
+                                        <option disabled> Choose...</option>
+                                        <option>Afganistan</option>
+                                        <option>Nigeria</option>
+                                        <option>Russia</option>
+                                        <option>United States</option>
+                                        <option>India</option>
+                                    </select>
+                                </div>
+                                <!-- form-group end.// -->
+                            </div>
+                            <!-- form-row.// -->
+
+
+                            <div class="form-group">
+                                <label for="confirm-password">Confirm password</label>
+                                <input app-type="confirm-password" id="confirm-password" class="form-control"
+                                    type="password" name="confirm_password" required>
+                            </div>
+                            <!-- form-group// -->
+
+                            <div class="form-group">
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" checked="" type="radio" name="gender"
+                                        value="male">
+                                    <span class="custom-control-label"> Male </span>
+                                </label>
+
+                                <label class="custom-control custom-radio custom-control-inline">
+                                    <input class="custom-control-input" type="radio" name="gender" value="female">
+                                    <span class="custom-control-label"> Female </span>
+                                </label>
+                            </div>
+                            <!-- form-group end.// -->
+
+                            <div class="form-group">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="terms-and-conditions"
+                                        checked>
+                                    <span class="custom-control-label"> I am agree with <a href="#">terms and
+                                            contitions</a>
+                                    </span>
+                                </label>
+                            </div>
+                            <!-- form-group end.// -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-dark btn-block" app-event="register"> Register
+                                </button>
+                            </div>
+
+                        </form>
+                    </article><!-- card-body.// -->
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/cl-modal.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
